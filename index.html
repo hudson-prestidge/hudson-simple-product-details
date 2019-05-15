@@ -4,26 +4,32 @@
     <meta charset="utf-8">
     <title>Hudson Simple Product Page</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header>
-      <button id="view-cart-btn" name="view-cart-btn">
-        <i class="fas fa-shopping-cart"></i>
-        <div class="cart-product-count">( 0 )</div>
-      </button>
-    </header>
-    <div class="product-img-container"><img src="./img/classic-tee.jpg"></img> </div>
-    <div class="product-details-container">
-      <h1>Classic Tee</h1>
-      <h2>$75.00</h2>
-      <p class="product-description"></p>
-      <div class="sizing-options">
-        <button class="size-btn" id="sml-size-btn">S
-        </button><button class="size-btn" id="med-size-btn">M
-        </button><button class="size-btn" id="lrg-size-btn">L
+    <div class="container">
+      <header>
+        <button id="view-cart-btn" name="view-cart-btn">
+          <i class="fas fa-shopping-cart"></i> <span class="cart-product-count">( 0 )</span>
         </button>
-      </div>
-      <button id="add-to-cart-btn">Add To Cart</button>
+      </header>
+      <div class="product-img-container"><img class="product-img" src="./img/classic-tee.jpg"></img> </div>
+      <div class="product-details-container">
+        <h1>Classic Tee</h1>
+        <h4>$75.00</h4>
+        <p class="product-description">Dolor sit amet, consectetur adipiscing elit. Haec et tu ita posuisti, et verba vestra sunt. Quod autem ratione actum est, id officium appellamus dolor sit amet,
+          sonsectetur adipiscing elit. Haec et tu ita posuisti, et verba vestra sunt. Quod autem ratione actum est, id officien appellamus.</p>
+          <div class="sizing-options">
+            <p>SIZE<span class="required-star">*</span></p>
+
+            <button class="size-btn" id="sml-size-btn">S
+            </button><button class="size-btn" id="med-size-btn">M
+            </button><button class="size-btn" id="lrg-size-btn">L
+            </button>
+          </div>
+          <button id="add-to-cart-btn">Add To Cart</button>
+        </div>
     </div>
   </body>
 </html>
