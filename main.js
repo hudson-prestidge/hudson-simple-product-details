@@ -39,7 +39,9 @@ const clearSizeSelection = function () {
 }
 
 const toggleCart = function () {
+  const viewCartButton = document.querySelector('#view-cart-btn')
   const minicartContainer = document.querySelector('#mini-cart-container')
+  viewCartButton.classList.toggle('active-cart-btn')
   minicartContainer.classList.toggle('hidden')
 }
 
@@ -52,7 +54,6 @@ const addToCart = function () {
     errorMessage.textContent = "Select a size to add an item to your cart."
     return
   } else {
-    console.log("should add")
     errorMessage.textContent = ""
     const size = selectedSize.textContent[0]
     minicart["ClassicTee"]["Quantities"][size] += 1
@@ -66,14 +67,14 @@ const addToCart = function () {
         miniProductImage.classList.add('mini-product-image')
         const miniProductData = document.createElement("div")
         miniProductData.classList.add("mini-product-data")
-        const miniProductTitle = document.createElement("h3")
+        const miniProductTitle = document.createElement("p")
         miniProductTitle.textContent = "Classic Tee"
         miniProductTitle.classList.add('mini-product-header')
-        const miniProductPrice = document.createElement("h3")
+        const miniProductPrice = document.createElement("p")
         miniProductPrice.classList.add('mini-product-header')
         miniProductPrice.classList.add(`mini-product-price-${size}`)
         miniProductPrice.textContent = `${minicart["ClassicTee"]["Quantities"][size]} x $${(minicart["ClassicTee"]["Prices"][size] / 100).toFixed(2)}`
-        const miniProductSizing = document.createElement("h3")
+        const miniProductSizing = document.createElement("p")
         miniProductSizing.textContent = `Size: ${size}`
         miniProductSizing.classList.add('mini-product-header')
 

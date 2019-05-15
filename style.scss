@@ -36,6 +36,7 @@ h1 {
 
 button {
   background-color: inherit;
+  border: none;
 }
 
 .size-btn {
@@ -48,7 +49,8 @@ button {
 
 #mini-cart-container {
   position: absolute;
-  transform: translateY(4em);
+  transform: translateY(4.3em);
+  margin: 0 5%;
   width: 90%;
   background-color: white;
   border: 1px solid $border-light-grey;
@@ -64,6 +66,7 @@ button {
 }
 
 .mini-product-window {
+  margin: 1em;
   width: 100%;
   height: 15em;
   display: flex;
@@ -120,8 +123,16 @@ p {
 
 #view-cart-btn {
   color: $font-colour-secondary;
-  margin: 0.7em 2em;
-  border: none;
+  padding: 1em;
+  margin-right: 5%;
+  z-index: 1;
+}
+
+.active-cart-btn {
+  background-color: white;
+  border-top: 1px solid $border-light-grey;
+  border-right: 1px solid $border-light-grey;
+  border-left: 1px solid $border-light-grey;
 }
 
 .product-img-container {
