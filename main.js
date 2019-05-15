@@ -13,9 +13,14 @@ window.onload = function() {
     sizeButtons[i].addEventListener('click', selectSizeButton)
   }
 
-  viewCartButton.addEventListener('click', toggleCart)
   addToCartButton.addEventListener('click', addToCart)
 
+  if(detectMobile()) {
+    viewCartButton.addEventListener('click', toggleCart)
+  } else {
+    viewCartButton.addEventListener('mouseover', toggleCart)
+    viewCartButton.addEventListener('mouseout', toggleCart)
+  }
 }
 
 const selectSizeButton = function () {
@@ -92,7 +97,7 @@ const addToCart = function () {
 }
 
 const detectMobile = function () {
-   if(window.innerWidth <= 800 && window.innerHeight <= 600) {
+   if(window.innerWidth <= 800 || window.innerHeight <= 600) {
      return true;
    } else {
      return false;

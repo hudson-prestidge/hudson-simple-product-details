@@ -73,13 +73,13 @@ button {
 }
 
 .mini-product-image {
-  margin: 10% 0;
-  width: 20%;
-  height: auto;
+  margin: 1em 0;
+  width: auto;
+  height: 90%;
 }
 
 .mini-product-data {
-  margin: 10% 0;
+  margin: 1em 0;
 }
 
 #add-to-cart-btn {
@@ -137,10 +137,32 @@ p {
 
 .product-img-container {
   width: 90%;
-    margin: 1em;
+  margin: 1em;
 }
 
 .product-img {
   width: 100%;
   height: auto;
+}
+
+@media (min-width: 800px) {
+
+  header {
+  }
+
+  .container {
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .product-img-container {
+    width: 30%;
+    margin-right: 10%;
+  }
+
+  .product-details-container {
+    width: 50%;
+    display: inline-block;
+  }
 }
