@@ -12,13 +12,14 @@
     <div class="container">
       <header>
         <button id="view-cart-btn" name="view-cart-btn">
-          <i class="fas fa-shopping-cart"></i> <span class="cart-product-count">( 0 )</span>
+          <i class="fas fa-shopping-cart"></i> ( <span id="cart-product-count">0</span> )
         </button>
       </header>
+      <div id="mini-cart-container" class="hidden"></div>
       <div class="product-img-container"><img class="product-img" src="./img/classic-tee.jpg"></img> </div>
       <div class="product-details-container">
-        <h1>Classic Tee</h1>
-        <h4>$75.00</h4>
+        <h1 class="product-name">Classic Tee</h1>
+        <h4 class="product-price">$75.00</h4>
         <p class="product-description">Dolor sit amet, consectetur adipiscing elit. Haec et tu ita posuisti, et verba vestra sunt. Quod autem ratione actum est, id officium appellamus dolor sit amet,
           sonsectetur adipiscing elit. Haec et tu ita posuisti, et verba vestra sunt. Quod autem ratione actum est, id officien appellamus.</p>
           <div class="sizing-options">
@@ -29,6 +30,7 @@
             </button><button class="size-btn" id="lrg-size-btn">L
             </button>
           </div>
+          <p id="error-message"></p>
           <button id="add-to-cart-btn">ADD TO CART</button>
         </div>
     </div>
