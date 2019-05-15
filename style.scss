@@ -1,5 +1,5 @@
 $header-background: #F6F6F7;
-$font-colour-main: #222222;
+$font-colour-primary: #222222;
 $font-colour-secondary: #888888;
 $required-star-colour: #C90000;
 $border-light-grey: #CCCCCC;
@@ -9,14 +9,13 @@ body {
   margin: 0
 }
 
-p, h1, h2, h3, h4, button, span {
-  font: 14px 'Open Sans' sans-serif;
-}
-
 * {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 1px;
 }
 
 header {
@@ -28,7 +27,11 @@ header {
 }
 
 h1, h2, h3, h4 {
-  color: $font-colour-main;
+  color: $font-colour-primary;
+}
+
+h1 {
+  font-size: 1.5em;
 }
 
 button {
@@ -37,14 +40,28 @@ button {
 
 .size-btn {
   color: $font-colour-secondary;
-  border: 1px solid $border-light-grey;
+  outline: 1px solid $border-light-grey;
   padding: 1.1em 1.3em;
-  margin-right: 0.3em;
+  margin-right: 0.5em;
+  border: none;
+}
+
+.selected {
+  color: $font-colour-primary;
+  outline: 2px solid $border-dark-grey;
 }
 
 #add-to-cart-btn {
+  font-weight: 800;
+  letter-spacing: 2px;
   border: 2px solid $border-dark-grey;
   padding: 1em 1.5em;
+  transition: 0.2s;
+}
+
+#add-to-cart-btn:hover {
+  color: white;
+  background-color: $border-dark-grey;
 }
 
 .container {

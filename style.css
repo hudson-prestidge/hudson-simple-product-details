@@ -1,13 +1,13 @@
 body {
   margin: 0; }
 
-p, h1, h2, h3, h4, button, span {
-  font: 14px 'Open Sans' sans-serif; }
-
 * {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 1px; }
 
 header {
   width: 100%;
@@ -19,18 +19,33 @@ header {
 h1, h2, h3, h4 {
   color: #222222; }
 
+h1 {
+  font-size: 1.5em; }
+
 button {
   background-color: inherit; }
 
 .size-btn {
   color: #888888;
-  border: 1px solid #CCCCCC;
+  outline: 1px solid #CCCCCC;
   padding: 1.1em 1.3em;
-  margin-right: 0.3em; }
+  margin-right: 0.5em;
+  border: none; }
+
+.selected {
+  color: #222222;
+  outline: 2px solid #222222; }
 
 #add-to-cart-btn {
+  font-weight: 800;
+  letter-spacing: 2px;
   border: 2px solid #222222;
-  padding: 1em 1.5em; }
+  padding: 1em 1.5em;
+  transition: 0.2s; }
+
+#add-to-cart-btn:hover {
+  color: white;
+  background-color: #222222; }
 
 .container {
   display: flex;
