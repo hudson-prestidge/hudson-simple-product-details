@@ -147,9 +147,6 @@ p {
 
 @media (min-width: 800px) {
 
-  header {
-  }
-
   .container {
     align-items: flex-start;
     flex-direction: row;
@@ -157,12 +154,13 @@ p {
   }
 
   .product-img-container {
-    width: 30%;
-    margin-right: 10%;
+    width: 20%;
+    margin: 0 10%;
   }
 
   .product-details-container {
-    width: 50%;
+    width: 30%;
+    margin-right: 25%;
     display: inline-block;
   }
 }

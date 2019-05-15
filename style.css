@@ -120,11 +120,12 @@ p {
     flex-wrap: wrap; }
 
   .product-img-container {
-    width: 30%;
-    margin-right: 10%; }
+    width: 20%;
+    margin: 0 10%; }
 
   .product-details-container {
-    width: 50%;
+    width: 30%;
+    margin-right: 25%;
     display: inline-block; } }
 
 /*# sourceMappingURL=style.css.map */
